@@ -16,6 +16,30 @@
 /* -------------------------------------------MAIN SECTION STYLES START --------------------------------- */
 /* ------------------------------------------HEADER SECTION STYLES START ------------------------------- */
 
+
+.mobile-nav {
+    display: none;
+}
+
+
+.desktop-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 4%;
+    text-align: center;
+}
+
+.desktop-nav>ul {
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    list-style: none;
+}
+
+.desktop-nav>ul>li>a {
+    text-decoration: none;
+}
+
 /* ------------------------------------------HEADER SECTION STYLES END ------------------------------- */
 
 /*------------------------------------------ BANNER SECTION STYLES START --------------------------------*/
@@ -39,8 +63,29 @@
 
 /*---------------------------------------- MOBILE SECTION RESPONSIVE STYLES START -------------------------- */
 @media screen and (max-width:576px) {
+
     /* -------------------------------------------MAIN SECTION STYLES START --------------------------------- */
     /* ------------------------------------------HEADER SECTION STYLES START ------------------------------- */
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    .mobile-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 10%;
+        padding: 4%;
+    }
+
+    .mobile-nav>h2 {
+        display: inline;
+    }
+
 
     /* ------------------------------------------HEADER SECTION STYLES END ------------------------------- */
 
