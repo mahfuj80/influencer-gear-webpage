@@ -43,10 +43,66 @@
 /* ------------------------------------------HEADER SECTION STYLES END ------------------------------- */
 
 /*------------------------------------------ BANNER SECTION STYLES START --------------------------------*/
+.banner {
+    display: flex;
+    justify-content: space-around;
+    padding: 4%;
+    align-items: center;
+}
+
+.description {
+    width: 60%;
+}
+
+.banner-description-header {
+    color: #3A3A3A;
+    font-family: Poppins;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.banner-description-paragraph {
+    color: #3A3A3A;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 2% 0%;
+}
+
+.banner-description-button {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 20px;
+    background: #E02C6D;
+    padding: 1% 2%;
+    border: 0;
+}
+
+.image {
+    background-image: url(../images/Circle\ design.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 /*------------------------------------------ BANNER SECTION STYLES END --------------------------------*/
 
 /*------------------------------------------- COMPANY WITH US STYLES START --------------------------------------*/
+.company-logos {
+    display: flex;
+    padding: 3%;
+    align-items: center;
+    justify-content: space-around;
+    width: 75%;
+    background: #FFF;
+    margin: auto;
+    border: 1px solid gray;
+    margin: 3% auto;
+    text-align: center;
+}
 
 /*------------------------------------------- COMPANY WITH US STYLES END --------------------------------------*/
 
@@ -59,6 +115,12 @@
 /*-------------------------------------------- FOOTER SECTION STYLES END  ------------------------------------*/
 
 /* -------------------------------------------MAIN SECTION STYLES END --------------------------------- */
+
+
+
+
+
+
 
 
 /*---------------------------------------- MOBILE SECTION RESPONSIVE STYLES START -------------------------- */
@@ -90,10 +152,24 @@
     /* ------------------------------------------HEADER SECTION STYLES END ------------------------------- */
 
     /*------------------------------------------ BANNER SECTION STYLES START --------------------------------*/
+    .banner {
+        flex-direction: column-reverse;
+    }
+
+    .description {
+        width: 83%;
+    }
 
     /*------------------------------------------ BANNER SECTION STYLES END --------------------------------*/
 
     /*------------------------------------------- COMPANY WITH US STYLES START --------------------------------------*/
+    .company-logos {
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 3% 5%;
+        width: 73%;
+        margin: 5% auto;
+    }
 
     /*------------------------------------------- COMPANY WITH US STYLES END --------------------------------------*/
 
